@@ -3,9 +3,6 @@ name: learn-github-actions
 on: 
   repository_dispatch:
     types: [push-to-simba-repo]
-  push:
-    branches: 
-      - master
 jobs:
   check-bats-version:
     runs-on: 
