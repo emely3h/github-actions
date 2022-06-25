@@ -1,0 +1,16 @@
+
+name: learn-github-actions
+on: 
+  push:
+    branches: 
+      - master
+jobs:
+  play:
+    runs-on: 
+      - ubuntu-latest
+    steps:
+      - run: |
+        echo "This is a test" \
+        ls \
+        cd .github/workflows \
+        ls
