@@ -37,5 +37,5 @@ jobs:
           value: v1.0.1
           commitChange: true
           updateFile: true
-          token: ${secrets.REPOSITORY_A_TOKEN}
+          token: ${secrets.REPO_TOKEN}
       - run: git status
