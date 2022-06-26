@@ -32,7 +32,7 @@ jobs:
         uses: fjogeleit/yaml-update-action@main
         with:
           valueFile: '.github/workflows/learn-github-actions.yaml'
-          propertyPath: 'jobs.check-bats-version.steps.with.ref'
+          propertyPath: 'jobs.check-bats-version.steps[0].with.ref'
           value: v1.0.1
           commitChange: true
           updateFile: true
