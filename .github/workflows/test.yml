@@ -31,8 +31,8 @@ jobs:
       - name: Update values.yaml
         uses: fjogeleit/yaml-update-action@main
         with:
-          valueFile: '.github/workflows/learn-github-actions.yaml'
-          propertyPath: 'jobs.check-bats-version.steps[1].with.ref'
+          valueFile: '.github/workflows/test2.yaml'
+          propertyPath: 'backend.version'
           value: v1.0.1
           commitChange: true
           updateFile: true
