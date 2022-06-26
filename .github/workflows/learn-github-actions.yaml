@@ -9,6 +9,9 @@ jobs:
       - ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+        with:
+          repository: MC/hermes-pubsub-acl-configurer
+          ref: asdf
       - uses: actions/setup-node@v3
         with:
           node-version: '12'

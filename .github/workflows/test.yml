@@ -20,3 +20,16 @@ jobs:
       - run: |
           cd .github/workflows
           ls -A
+  test-update-file:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Update values.yaml
+        uses: fjogeleit/yaml-update-action@main
+        with:
+          valueFile: 'learn-github-actions.yaml'
+          propertyPath: 'jobs.check-bats-version.steps.with.ref'
+          value: v1.0.1
+          commitChange: true
+          updateFile: true
+      - run: git status
